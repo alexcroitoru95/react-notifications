@@ -19,8 +19,8 @@ class NotificationContainer extends React.Component {
   };
 
   constructor(props) {
-        super(props);
-        NotificationManager.addChangeListener(this.handleStoreChange);
+    super(props);
+    NotificationManager.addChangeListener(this.handleStoreChange);
   }
 
   componentWillUnmount = () => {
