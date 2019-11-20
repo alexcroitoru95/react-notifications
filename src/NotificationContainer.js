@@ -14,14 +14,14 @@ class NotificationContainer extends React.Component {
     leaveTimeout: 400
   };
 
-  state = {
-    notifications: []
-  };
-
   constructor(props) {
     super(props);
     NotificationManager.addChangeListener(this.handleStoreChange);
   }
+
+  state = {
+    notifications: []
+  };
 
   componentWillUnmount = () => {
     NotificationManager.removeChangeListener(this.handleStoreChange);
